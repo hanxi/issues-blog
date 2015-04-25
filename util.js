@@ -33,7 +33,7 @@ renderMarkdown = function(content,text)
 {
     var post = {
         "text": text,
-        "mode": "gfm",
+        "mode": "gfm"
     };
     ajax(post, "https://api.github.com/markdown", function(data) {
         content.innerHTML = data;
