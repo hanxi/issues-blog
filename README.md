@@ -20,3 +20,7 @@
 
 5. 然后就使用 https://username.github.io/blog （username 为你的 github 账号名，blog 为你创建的 repository 名字）访问你的博客了，博客内容是你这个 repository 下的所有 issues。
 6. 可以修改 CNAME 使用域名访问你的博客
+
+### 如何实现的？
+
+http://blog.hanxi.info/6
