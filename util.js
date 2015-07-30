@@ -60,3 +60,19 @@ setFooter = function()
         Powered by <a href="http://github.com/hanxi/issues-blog" target="_blank">issues-blog</a>.\
         </span>';
 }
+
+hideElement = function(id)
+{
+    var node = document.getElementById(id);
+    node.style.display="none";
+}
+
+showElement = function(id)
+{
+    var node = document.getElementById(id);
+    node.style.display="";
+}
+
+loadPageVar = function (sVar) {
+    return unescape(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + escape(sVar).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
+}
