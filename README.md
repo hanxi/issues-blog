@@ -29,4 +29,4 @@
 
 ### 如何实现的？
 
-http://blog.hanxi.info/6
+http://blog.hanxi.info/?p=6
