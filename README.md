@@ -20,6 +20,9 @@
         access_token: "dbfe3dd66ee904988f2b"+"aaaf9bf49a03b6e3fd62"
 	};
     ```
+    
+   * access_token 的申请参考这里 https://github.com/wuhaoworld/github-issues-blog
+   * 一定要拆分字符串相加，否则 github 会自动使 access_token 实效
 
 5. 然后就使用 https://username.github.io/blog （username 为你的 github 账号名，blog 为你创建的 repository 名字）访问你的博客了，博客内容是你这个 repository 下的所有 issues。
 6. 可以修改 CNAME 使用域名访问你的博客
