@@ -25,7 +25,8 @@ getJSON = function(url, callback)
                 for (var i=0; i<headersArray.length; i++) {
                     var kv = headersArray[i].split(": ");
                     if (kv.length==2) {
-                        headers[kv[0]] = kv[1];
+                        var k = kv[0].toLowerCase();
+                        headers[k] = kv[1];
                     }
                 }
             }
@@ -43,6 +44,7 @@ ajax = function(post, url, callback) {
     }
     xhr.open(method, url, true);
     xhr.setRequestHeader("Accept", "application/json, text/javascript, */*; q=0.01");
+    xhr.setRequestHeader("Authorization", "token " + config.access_token);
     xhr.onreadystatechange = function() {
         if (xhr.readyState==4 && xhr.status==200)
         {
