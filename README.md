@@ -20,7 +20,7 @@
         access_token: "dbfe3dd66ee904988f2b"+"aaaf9bf49a03b6e3fd62"
 	};
     ```
-    
+
    * access_token 的申请参考这里 https://github.com/wuhaoworld/github-issues-blog
    * 一定要拆分字符串相加，否则 github 会自动使 access_token 实效
 
